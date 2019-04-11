@@ -27,5 +27,3 @@ class Node:
         if self.right:
             self.right.visit()
 
-        # return self.val
-

@@ -3,10 +3,6 @@
 from Tree import Tree
 
 
-class SortedData:
-    result = []
-
-
 def sort(data):
     tree = Tree()
     for num in data:
