@@ -1,36 +1,5 @@
 #!/usr/bin/env python3
-import random
-
-
-class Tree:
-    def __init__(self):
-        self.root = None
-
-    def add_node(self, val):
-        n = Node(val)
-        if self.root is None:
-            self.root = n
-        else:
-            self.root.add_node(n)
-
-
-class Node:
-    def __init__(self, val):
-        self.val = val
-        self.right = None
-        self.left = None
-
-    def add_node(self, n):
-        if n.val < self.val:
-            if self.left is None:
-                self.left = n
-            else:
-                self.left.add_node(n)
-        if n.val > self.val:
-            if self.right is None:
-                self.right = n
-            else:
-                self.right.add_node(n)
+from Tree import Tree
 
 
 def main():
@@ -59,5 +28,12 @@ def find(key):
     print(dict)
 
 
+def sort(data):
+    tree = Tree()
+    for num in data:
+        tree.add_node(num)
+    tree.traverse()
+
+
 if __name__ == "__main__":
-    find(34)
+    sort([29, 24, 14, 4, 5, 92, 35, 63])
