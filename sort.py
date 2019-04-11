@@ -7,7 +7,7 @@ def sort(data):
     tree = Tree()
     for num in data:
         tree.add_node(num)
-    print(tree.traverse())
+    tree.traverse()
 
 
 if __name__ == "__main__":

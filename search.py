@@ -30,4 +30,4 @@ def search(val):
 
 
 if __name__ == "__main__":
-    search(int(input()))
+    search(int(input('pick a number to search for! ')))
