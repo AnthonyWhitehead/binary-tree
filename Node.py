@@ -23,7 +23,9 @@ class Node:
 
         if self.left:
             self.left.visit()
+
         print(self.val)
+
         if self.right:
             self.right.visit()
 

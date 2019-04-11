@@ -4,14 +4,13 @@ from Node import Node
 
 class Tree:
 
-    result = []
-
     def __init__(self):
         self.root = None
-        self.sortedResult = []
 
     def add_node(self, val):
+
         n = Node(val)
+
         if self.root is None:
             self.root = n
         else:
